@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".dropbtn").addEventListener("click",(()=>{document.getElementById("myDropdown").classList.toggle("show")})),window.addEventListener("click",(e=>{e.target.matches(".dropbtn")||document.querySelectorAll(".dropdown-content").forEach((e=>{e.classList.contains("show")&&e.classList.remove("show")}))}))})();

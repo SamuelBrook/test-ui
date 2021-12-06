@@ -1,0 +1,181 @@
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(Montserrat-Regular.ttf);
+}
+
+body {
+  display: flex;
+  row-gap: 200px;
+  column-gap: 600px;
+  flex-wrap: wrap;
+  padding: 24px;
+  padding-bottom: 48px;
+  padding-left: 80px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-family: Montserrat-Medium;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Montserrat-Regular;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+#mobile-container {
+  width: 400px;
+  height: 800px;
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
+
+#header {
+  height: 60px;
+  border-bottom-color: black;
+  border-bottom-width: thin;
+  border-bottom-style: solid;
+}
+
+#main {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.button-container:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+i {
+  width: 20px;
+}
+
+.button {
+  font-family: Montserrat-Medium;
+  font-size: 16px;
+}
+
+.image-slider {
+  width: 1000px;
+  height: 400px;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.image-order {
+  margin-top: auto;
+  height: 56px;
+  border-color: black;
+  border-top-width: thin;
+  border-top-style: solid;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-right,
+.slide-left {
+  height: 50px;
+  width: 50px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-right {
+  margin-left: auto;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  align-self: center;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+}
