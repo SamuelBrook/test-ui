@@ -76,7 +76,30 @@ const displayImages = () => {
                 images[counter].style.display = "block";
                 dots[counter].id = "active";
     }
-    setInterval(switchRight, 5000);
+    const imageSwitchTimer = (() => {
+        const imageTimer = setInterval(switchRight, 5000);
+
+        const rightSlider = document.querySelector(".slide-right");
+        const leftSlider = document.querySelector(".slide-left");
+        const dots = document.querySelectorAll(".dot");
+
+        rightSlider.addEventListener("click", () => {
+            clearInterval(imageTimer);
+            imageTimer = setInterval(switchRight, 5000);
+        });
+        leftSlider.addEventListener("click", () => {
+            clearInterval(imageTimer);
+            imageTimer = setInterval(switchRight, 5000);
+        });
+        dots.forEach(dot => {
+            dot.addEventListener("click", () => {
+            clearInterval(imageTimer);
+            imageTimer = setInterval(switchRight, 5000);
+        });
+            
+        });
+        
+    })();
 
 }
 
