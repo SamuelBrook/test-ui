@@ -1,6 +1,5 @@
-import { toggleMenu } from "./dropdown-menu";
-import { displayImages } from "./image-carousel";
-
+import { toggleMenu } from './dropdown-menu';
+import { displayImages } from './image-carousel';
 
 toggleMenu();
 displayImages();
